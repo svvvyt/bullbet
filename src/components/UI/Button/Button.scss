@@ -1,0 +1,68 @@
+@import '../../../scss/variables.scss';
+
+.button {
+  border: none;
+  color: #fff;
+  padding: 17px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-family: $font-arial;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+
+  &__main {
+    background-color: $main;
+
+    &:hover {
+      background-color: darken($color: $main, $amount: 12);
+    }
+
+    &:active {
+      background-color: darken($color: $main, $amount: 7);
+    }
+
+    &:disabled {
+      background-color: darken($color: $main, $amount: 7);
+      cursor: not-allowed;
+    }
+  }
+
+  &__secondary {
+    background-color: #242527;
+
+    &:hover {
+      background-color: lighten($color: #242527, $amount: 10);
+    }
+
+    &:active {
+      background-color: lighten($color: #242527, $amount: 20);
+    }
+
+    &:disabled {
+      background-color: darken($color: #242527, $amount: 7);
+      cursor: not-allowed;
+    }
+  }
+
+  &__bet {
+    background-color: darken($color: $main, $amount: 15);
+    padding: 10px 15px;
+
+    &:hover {
+      background-color: darken($color: $main, $amount: 27);
+    }
+
+    &:active {
+      background-color: darken($color: $main, $amount: 22);
+    }
+
+    &:disabled {
+      background-color: darken($color: $main, $amount: 22);
+      cursor: default;
+    }
+  }
+}

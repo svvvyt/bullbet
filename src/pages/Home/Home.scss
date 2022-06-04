@@ -1,0 +1,27 @@
+.home {
+  margin-top: 96px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar__wrapper {
+  display: flex;
+  left: calc(50% - 1440px / 2);
+}
+
+.home__main {
+  flex: 0 1 796px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.bet-slip__wrapper {
+  right: calc(50% - 1440px / 2 + 32px);
+}
+
+.footer__wrapper {
+  width: 1440px;
+  background: #0f1112;
+  padding-top: 30px;
+  margin-top: 30px;
+}

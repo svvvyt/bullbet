@@ -1,0 +1,100 @@
+@import '../../../scss/variables.scss';
+
+.match-list__item {
+  height: 60px;
+  background-color: #1f2022;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: lighten($color: #1f2022, $amount: 4);
+    height: 65px;
+  }
+
+  &:active {
+    background-color: lighten($color: #1f2022, $amount: 10);
+  }
+
+  &__game-logo {
+    margin-right: 15px;
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__live-container {
+    margin-right: 20px;
+  }
+
+  &__team-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__team-logo {
+    margin: 0 10px;
+  }
+
+  &__team-name {
+    font-weight: 700;
+    font-family: $font-arial;
+    margin: 0 10px;
+  }
+
+  &__ratio {
+    font-weight: 700;
+    font-family: $font-arial;
+    padding: 12px 20px;
+    background-color: lighten($color: #252b2d, $amount: 5);
+    border-radius: 5px;
+    border-top: 3px solid transparent;
+    transition: 0.3s;
+    margin: 0 15px;
+
+    &:hover {
+      border-color: #205b39;
+      background-color: lighten($color: #252b2d, $amount: 10);
+    }
+  }
+
+  &__versus-block {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-family: $font-arial;
+    color: #404953;
+    transition: 0.3s;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__play-button {
+    margin: 0 10px 0 15px;
+
+    img {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &__viewer-counter {
+    font-weight: 700;
+    font-family: $font-arial;
+    color: #404953;
+    transition: 0.3s;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

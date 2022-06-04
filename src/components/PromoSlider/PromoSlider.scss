@@ -1,0 +1,53 @@
+@import '../../scss/variables.scss';
+
+.slider {
+  position: relative;
+  display: flex;
+  width: 920px;
+  height: 350px;
+  background-color: #282d30;
+  border-radius: 10px;
+  margin-bottom: 45px;
+
+  &__container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__wrapper {
+  }
+
+  &__items {
+  }
+
+  &__item {
+    &__content {
+    }
+  }
+
+  &__controller {
+    top: 360px;
+    right: 432px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__dot {
+    transition: 0.3s ease-in-out;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+
+    &:hover {
+      background-color: lighten($color: $background, $amount: 10);
+    }
+
+    &:active {
+      background-color: $main;
+    }
+  }
+}

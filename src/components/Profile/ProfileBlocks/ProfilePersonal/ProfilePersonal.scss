@@ -1,0 +1,112 @@
+@import '../../../../scss/variables.scss';
+
+.personal {
+  &__wrapper {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+  &__verification {
+    width: 500px;
+    height: 420px;
+    margin-right: 20px;
+
+    &__header {
+      font-family: $font-arial;
+      font-weight: 700;
+      color: #fff;
+      font-size: 24px;
+    }
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+    }
+
+    &__upload-button {
+      justify-content: center;
+      width: 480px;
+      height: 330px;
+      background-color: #fff;
+      border-radius: 4px;
+      padding: 67px 10px 60px;
+
+      svg {
+        display: block;
+        margin: auto;
+      }
+
+      p {
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        opacity: 0.5;
+        color: $secondary;
+        margin: 20px 0;
+      }
+
+      label {
+        margin-left: 160px;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        color: $main;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      input {
+        display: none;
+      }
+    }
+  }
+
+  &__change-password {
+    width: 480px;
+    height: 420px;
+
+    &__header {
+      font-family: $font-arial;
+      font-weight: 700;
+      color: #fff;
+      font-size: 24px;
+    }
+
+    form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+  }
+
+  &__info {
+    padding: 20px;
+
+    &__header {
+      font-family: $font-arial;
+      font-weight: 700;
+      color: #fff;
+      font-size: 24px;
+    }
+
+    form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+
+    // TODO: change fields margin to align to top margin between "verification" and "change password" blocks
+
+    &__defaultFields {
+      width: calc(50% - 8px);
+    }
+
+    &__activeFields {
+      width: calc(50% - 20px);
+    }
+  }
+}

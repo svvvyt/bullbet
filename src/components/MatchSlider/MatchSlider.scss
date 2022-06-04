@@ -1,0 +1,87 @@
+.match-slider {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+
+  &__header {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__content {
+      display: flex;
+      flex-direction: row;
+      font-weight: 700;
+    }
+
+    &__expandable {
+      padding: 2px;
+      margin-right: 12px;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background-color: lighten($color: #18191b, $amount: 15);
+      }
+
+      &:active {
+        background-color: lighten($color: #18191b, $amount: 25);
+      }
+    }
+
+    &__text {
+      margin-right: 12px;
+      white-space: nowrap;
+    }
+
+    &__available {
+      color: #3f4042;
+      transition: 0.3s;
+      cursor: default;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    &__nav {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__arrow {
+      background-color: #252628;
+      color: #5d5e60;
+      padding: 7px 10px;
+      margin-right: 10px;
+      border-radius: 10px;
+      transition: 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        color: #fff;
+        background-color: lighten($color: #252628, $amount: 10);
+      }
+
+      &:active {
+        background-color: lighten($color: #252628, $amount: 15);
+      }
+    }
+  }
+
+  &__main {
+    display: flex;
+
+    &__slides {
+      display: flex;
+      align-items: center;
+    }
+
+    &__slide {
+      margin: 0 4px;
+    }
+  }
+}

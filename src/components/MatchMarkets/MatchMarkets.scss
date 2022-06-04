@@ -1,0 +1,31 @@
+@import '../../scss/variables.scss';
+
+.match-markets {
+  &__wrapper {
+  }
+
+  &__header {
+    margin-top: 35px;
+    font-weight: 700;
+    font-family: $font-arial;
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+  }
+
+  &__game-name {
+    margin-right: 15px;
+  }
+
+  &__league-name {
+    margin-left: 15px;
+  }
+
+  &__categories__wrapper {
+    margin: 25px 0 0px 20px;
+  }
+
+  &__main {
+    margin-top: 20px;
+  }
+}

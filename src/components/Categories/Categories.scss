@@ -1,0 +1,40 @@
+@import '../../scss/variables.scss';
+.categories {
+  background-color: #2c3134;
+  border-radius: 10px;
+  padding: 7px 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+li {
+  font-weight: 700;
+  font-family: $font-arial;
+  padding: 5px 0;
+  margin-right: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: lighten($color: #404953, $amount: 20);
+  padding: 12px;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    color: #fff;
+    background-color: lighten($color: #2c3134, $amount: 10);
+  }
+
+  &:active {
+    background-color: lighten($color: #2c3134, $amount: 30);
+  }
+
+  &.active {
+    color: #fff;
+    background-color: lighten($color: #2c3134, $amount: 20);
+  }
+}

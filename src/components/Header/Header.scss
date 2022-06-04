@@ -1,0 +1,113 @@
+@import '../../scss/variables.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  max-width: 1440px;
+  width: 100%;
+  z-index: 90;
+  background: #17191b;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 188px;
+    cursor: pointer;
+  }
+
+  &__navbar {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0 160px 0 80px;
+
+    li:first-child {
+      margin-left: 40px;
+    }
+
+    &__elem {
+      transition: 0.3s;
+      margin-right: 30px;
+      font-weight: 700;
+      font-family: $font-arial;
+      white-space: nowrap;
+
+      &:hover {
+        border-color: #fff;
+      }
+
+      a {
+        transition: 0.3s;
+        color: #404953;
+        text-decoration: none;
+
+        &:hover {
+          color: #fff;
+        }
+
+        &:active {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &__cash {
+    margin-right: 20px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+
+    &__replenish-button {
+      display: flex;
+    }
+
+    &__wallet-button {
+      display: flex;
+    }
+  }
+
+  &__personal {
+    position: relative;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #2c3134;
+    transition: 0.3s;
+
+    &:hover {
+      color: #fff;
+      background-color: lighten($color: #2c3134, $amount: 10);
+    }
+
+    &:active {
+      color: #fff;
+      background-color: lighten($color: #2c3134, $amount: 20);
+    }
+
+    &__user-logo {
+      padding: 0 12px 0 7px;
+    }
+
+    &__username {
+      font-family: $font-arial;
+      margin-right: 10px;
+    }
+  }
+}
+
+.user__logo {
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+}

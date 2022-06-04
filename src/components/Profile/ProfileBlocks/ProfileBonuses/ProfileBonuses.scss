@@ -1,0 +1,42 @@
+.bonuses {
+  &__wrapper {
+  }
+}
+
+.select__wrapper {
+}
+
+.coupon__wrapper {
+  border: 1px solid;
+  align-items: center;
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #222426;
+  opacity: 0.7;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 8px 15px;
+}
+
+.input__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #222426;
+}
+
+.coupon__button {
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: #000;
+  }
+}

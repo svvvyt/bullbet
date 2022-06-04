@@ -1,0 +1,36 @@
+.match-markets-event {
+  padding: 14px 12px;
+  margin-bottom: 8px;
+  background-color: #222426;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #fff;
+  flex-basis: calc(50% - 4px);
+  transition: 0.3s;
+  font-weight: 700;
+
+  &:hover {
+    background-color: lighten($color: #222426, $amount: 15);
+  }
+
+  &:active {
+    background-color: lighten($color: #222426, $amount: 25);
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_ratio {
+    width: 50px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../scss/variables.scss';
+
+.profile {
+  font-family: $font-arial;
+  width: 1020px;
+  margin-bottom: 40px;
+
+  &__container {
+  }
+
+  &__header {
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    background-color: #2c3134;
+
+    padding-bottom: 20px;
+  }
+
+  &__description {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  &__sections {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__categories__wrapper {
+    margin: 20px 0;
+  }
+
+  &__content-block {
+    background-color: #2c3134;
+    border-radius: 0 0 10px 10px;
+  }
+}

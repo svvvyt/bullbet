@@ -1,0 +1,65 @@
+@import '../../scss/variables.scss';
+
+.match-promo {
+  width: 920px;
+  height: 200px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-family: $font-arial;
+  position: relative;
+  overflow: hidden;
+  background-color: lighten(#1b4950, 10);
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 25px;
+    padding-top: 70px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  &__game-name {
+  }
+
+  &__league-name {
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  &__team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-arial;
+
+    &-logo {
+    }
+
+    &-name {
+      font-size: 18px;
+    }
+  }
+
+  &__status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}

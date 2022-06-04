@@ -1,0 +1,21 @@
+.live {
+  font-weight: 900;
+  display: flex;
+  flex-direction: row;
+  background-color: #e20002;
+  border-radius: 7%;
+  padding: 8px 14px;
+  font-size: 12px;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: darken($color: #e20002, $amount: 6);
+  }
+
+  &__text {
+    margin-right: 5px;
+  }
+
+  &__score {
+  }
+}

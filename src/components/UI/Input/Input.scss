@@ -1,0 +1,106 @@
+@import '../../../scss/variables.scss';
+
+.input {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #222426;
+  font-style: normal;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.input label {
+  margin-bottom: 12px;
+  color: lighten($color: #404953, $amount: 15);
+  font-weight: 700;
+  transition: 0.3s;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container .input-main {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #222426;
+  font-style: normal;
+  box-sizing: border-box;
+  padding: 14px 12px;
+  width: 100%;
+  height: 60px;
+  background: #ffffff;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+.input-container input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+  outline: 0;
+}
+
+.input-container input:disabled {
+  background-color: #e4e4e4;
+  cursor: not-allowed;
+}
+
+.input-container input::placeholder {
+  color: #212529;
+  opacity: 0.4;
+  font-weight: 700;
+}
+
+.input-valid {
+  border-color: $red;
+}
+
+.input-invalid {
+  border-color: $green;
+}
+
+.input-promocode {
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #222426;
+}
+
+.input-bet {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #fff;
+  font-style: normal;
+  box-sizing: border-box;
+  padding: 7px 6px;
+  width: 100%;
+  background: #242628;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.input-bet-email {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #fff;
+  font-style: normal;
+  box-sizing: border-box;
+  padding: 4px 3px;
+  width: 80%;
+  background: #242628;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}

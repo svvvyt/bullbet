@@ -1,0 +1,18 @@
+.select {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #222426;
+  opacity: 0.9;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 8px 15px;
+
+  &__option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+  }
+}

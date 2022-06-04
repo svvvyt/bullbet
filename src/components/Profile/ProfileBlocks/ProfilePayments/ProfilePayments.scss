@@ -1,0 +1,43 @@
+.payments {
+  &__wrapper {
+    padding: 20px 0 10px;
+  }
+
+  &__tabs {
+    background-color: #383e42;
+    border-radius: 4px;
+    margin: 0px 20px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  &__tab {
+    padding: 13px 22px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #222426;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #e7e7e7;
+
+    &:hover {
+      background-color: #fff;
+    }
+
+    &:active {
+      background-color: darken($color: #fff, $amount: 20);
+    }
+
+    &__left {
+      border-radius: 4px 0 0 4px;
+    }
+
+    &__right {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}
